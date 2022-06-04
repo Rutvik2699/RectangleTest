@@ -1,0 +1,7 @@
+C:\Users\rutvi\source\repos\RectangleTest\RectangleTest\bin\Debug\RectangleTest.pdb
+C:\Users\rutvi\source\repos\RectangleTest\RectangleTest\obj\Debug\RectangleTest.csproj.AssemblyReference.cache
+C:\Users\rutvi\source\repos\RectangleTest\RectangleTest\obj\Debug\RectangleTest.csproj.CoreCompileInputs.cache
+C:\Users\rutvi\source\repos\RectangleTest\RectangleTest\obj\Debug\RectangleTest.pdb
+C:\Users\rutvi\source\repos\RectangleTest\RectangleTest\obj\Debug\RectangleTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\rutvi\source\repos\RectangleTest\RectangleTest\bin\Debug\RectangleTest.exe
+C:\Users\rutvi\source\repos\RectangleTest\RectangleTest\obj\Debug\RectangleTest.exe
