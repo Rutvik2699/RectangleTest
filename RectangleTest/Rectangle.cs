@@ -8,6 +8,7 @@ namespace RectangleTest
 {
     public class Rectangle
     {
+        //Declaring Variable
         private int Rectanglelength;
         private int Rectanglewidth;
 
@@ -22,12 +23,12 @@ namespace RectangleTest
             this.Rectanglelength = Math.Abs(Rectanglelength);
             this.Rectanglewidth = Math.Abs(Rectanglewidth);
         }
-
+        //Function 1 to GetLength of rectangle
         public int GetLength()
         {
             return Rectanglelength;
         }
-
+        //Function 2 to SetLength of rectangle
         public int SetLength(int Rectanglelength)
         {
             this.Rectanglelength=Rectanglelength;
@@ -37,13 +38,13 @@ namespace RectangleTest
             }
             return Rectanglelength;
         }
-
+        //Function 3 to GetWidth of rectangle
         public int GetWidth()
         {
             return Rectanglewidth;
         }
 
-
+        //Function 4 to SetWidth of rectangle
         public int SetWidth(int Rectanglewidth)
         {
             this.Rectanglewidth = Rectanglewidth;
@@ -53,7 +54,7 @@ namespace RectangleTest
             }
             return Rectanglewidth;
         }
-
+        //Function 5 to GetPerimeter of rectangle
         public int GetPerimeter()
         {
             int perimeter = 2 * (Rectanglelength + Rectanglewidth);
@@ -64,7 +65,7 @@ namespace RectangleTest
             }
             return perimeter;
         }
-
+        //Function 6 to GetArea of rectangle
         public int GetArea()
         {
             int area = Rectanglelength * Rectanglewidth;

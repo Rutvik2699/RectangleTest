@@ -8,9 +8,10 @@ namespace RectangleTest
 {
     public class Program
     {
+        //Decalring Variables
         int Rectanglelength;
         int Rectanglewidth;
-
+        //Taking input from user
         public void getRectangleValues()
         {
             Console.WriteLine("Enter the length on Rectangle");
@@ -19,6 +20,7 @@ namespace RectangleTest
             Console.WriteLine("Enter the width on Rectangle");
             Rectanglewidth = Convert.ToInt32(Console.ReadLine());
         }
+        //Displaying Menu options
        public int displaySelectMenuOptions()
         {
             Console.WriteLine("**********************************************");
@@ -35,7 +37,7 @@ namespace RectangleTest
 
             return answer;
         }
-
+        //Main function
         public static void Main(string[] args)
         {
             Rectangle rectangle = new Rectangle();
@@ -57,46 +59,51 @@ namespace RectangleTest
                        //program.displaySelectMenuOptions();
                        ans = program.displaySelectMenuOptions();
                        
-
+                        //Using SwitchCase to switch between user inputs
                         switch (ans)
                         {
+                            //To display the length of rectangle
                             case 1:Console.WriteLine("Length of Rectangle:{0}", rectangle.GetLength());
                                 break;
-
+                            //To enter ew length of rectangle
                             case 2:
-                                Console.WriteLine("Enter new length ");
+                                Console.WriteLine("Enter new length for Rectangle");
                                 int length = Convert.ToInt32(Console.ReadLine());
                                 if (length < 1)
                                 {
-                                    Console.WriteLine("Invalid Input");
+                                    Console.WriteLine("Invalid Input by user");
                                     break;
                                 }
                                 rectangle.SetLength(length);
                                 break;
-
+                            //To displaying the width of rectangle
                             case 3:
-                                Console.WriteLine("Width of the Rectangle: {0}", rectangle.GetWidth());
+                                Console.WriteLine("Width of Rectangle: {0}", rectangle.GetWidth());
                                 break;
+                                //To set new width for rectangle
                             case 4:
-                                Console.Write("Enter Width:");
+                                Console.Write("Enter Width for this rectangle:");
                                 int width = Convert.ToInt32(Console.ReadLine());
                                 if (width < 1)
                                 {
-                                    Console.WriteLine("Invalid Input");
+                                    Console.WriteLine("Invalid Input by user");
                                     break;
                                 }
                                 rectangle.SetWidth(width);
                                 break;
-
+                                //To calculate the perimeter of rectangle
                             case 5:
-                                Console.WriteLine("Perimeter of Rectangle: {0}", rectangle.GetPerimeter());
+                                Console.WriteLine("Perimeter of this Rectangle: {0}", rectangle.GetPerimeter());
                                 break;
+                                //To calculate Area of rectangle
                             case 6:
-                                Console.WriteLine("Area of Rectangle: {0}", rectangle.GetArea());
+                                Console.WriteLine("Area of this Rectangle: {0}", rectangle.GetArea());
                                 break;
+                                //To exit the program
                             case 7:
                                 System.Environment.Exit(0);
                                 break;
+                                //Default switch case
                             default: Console.WriteLine("Please enter Correct option from the above given options");
                                 break;
                         }
@@ -105,13 +112,15 @@ namespace RectangleTest
                     } while(ans != 7);
                     
                 Console.ReadLine();
+                    //Jumping back to the top to show user the Menu again
                 goto runLoopAgain;
                 }
                 else
                 {
-                    throw new Exception("Invalid values");
+                    throw new Exception("Invalid value entered by user");
                 }
             }
+            //Catching exceptions
             catch(Exception ex)
             {
                 Console.WriteLine(ex);

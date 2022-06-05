@@ -5,7 +5,12 @@
       "ProjectGuid": "ed39699c-1909-446b-9ff6-3598ecb58e8d",
       "DisplayName": "RectangleTest",
       "ColorIndex": 0
+    },
+    "cc228572-054a-4589-9b1e-d7510f6c4e39": {
+      "ProjectGuid": "cc228572-054a-4589-9b1e-d7510f6c4e39",
+      "DisplayName": "RectangleUnitTests",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
